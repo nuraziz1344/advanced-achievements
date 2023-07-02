@@ -45,13 +45,13 @@
 								</filter>
 							</filters>
 							<relocations>
-								<!-- Older versions of Minecraft may ship antique builds of Apache 
+								<!-- Older versions of Minecraft may ship antique builds of Apache
 									Commons, relocate our own managed version. -->
 								<relocation>
 									<pattern>org.apache.commons</pattern>
 									<shadedPattern>com.hm.apache.commons</shadedPattern>
 								</relocation>
-								<!-- Reduce risks of conflicts with dependencies commonly used in 
+								<!-- Reduce risks of conflicts with dependencies commonly used in
 									other plugins. -->
 								<relocation>
 									<pattern>org.h2</pattern>
@@ -89,56 +89,67 @@
 		<dependency>
 			<groupId>com.hm.achievement</groupId>
 			<artifactId>advanced-achievements-api</artifactId>
+			<version>8.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.dagger</groupId>
 			<artifactId>dagger</artifactId>
+			<version>2.46.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-text</artifactId>
+			<version>1.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot-api</artifactId>
+			<version>1.20.1-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.MilkBowl</groupId>
 			<artifactId>VaultAPI</artifactId>
+			<version>1.7.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.pyvesb</groupId>
 			<artifactId>petmaster</artifactId>
+			<version>1.12.5</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.Zrips</groupId>
 			<artifactId>Jobs</artifactId>
+			<version>4.17.2</version>
 		</dependency>
 		<dependency>
 			<groupId>net.essentialsx</groupId>
 			<artifactId>EssentialsX</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.bstats</groupId>
-					<artifactId>bstats-bukkit</artifactId>
-				</exclusion>
-			</exclusions>
+			<version>2.20.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>me.clip</groupId>
 			<artifactId>placeholderapi</artifactId>
+			<version>2.11.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
+			<version>42.6.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+			<version>2.1.214</version>
 		</dependency>
 
 		<!-- Test dependencies -->
