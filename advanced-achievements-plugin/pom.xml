@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.hm.achievement</groupId>
 		<artifactId>advanced-achievements</artifactId>
-		<version>8.0.2</version>
+		<version>${revision}</version>
 	</parent>
 	<artifactId>advanced-achievements-plugin</artifactId>
 	<packaging>jar</packaging>
@@ -78,6 +78,7 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
 				<excludes>
 					<exclude>config-*.yml</exclude>
 				</excludes>
@@ -89,7 +90,7 @@
 		<dependency>
 			<groupId>com.hm.achievement</groupId>
 			<artifactId>advanced-achievements-api</artifactId>
-			<version>8.0.2</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.dagger</groupId>
