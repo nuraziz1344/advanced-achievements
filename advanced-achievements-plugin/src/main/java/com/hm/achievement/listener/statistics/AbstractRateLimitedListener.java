@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -124,7 +125,7 @@ public class AbstractRateLimitedListener extends AbstractListener implements Cle
 	 */
 	private void displayActionBarMessage(Player player, long timeToWait) {
 		String timeWithOneDecimal = String.format("%.1f", (double) timeToWait / 1000);
-		String message = "\u00A7o" + StringUtils.replaceOnce(langStatisticCooldown, "TIME", timeWithOneDecimal);
+		String message = ChatColor.ITALIC + StringUtils.replaceOnce(langStatisticCooldown, "TIME", timeWithOneDecimal);
 		player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(message));
 	}
 }

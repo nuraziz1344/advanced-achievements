@@ -283,7 +283,8 @@ public class PlayerAdvancedAchievementListener implements Listener, Reloadable {
 						new String[] { receiver.getName(), nameToShowUser })
 				: StringUtils.replaceOnce(langAchievementReceived, "PLAYER", receiver.getName()) + nameToShowUser;
 		if (configActionBarNotify) {
-			otherPlayer.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("&o" + message));
+			otherPlayer.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(
+					net.md_5.bungee.api.ChatColor.ITALIC + message));
 		} else {
 			otherPlayer.sendMessage(pluginHeader + message);
 		}
