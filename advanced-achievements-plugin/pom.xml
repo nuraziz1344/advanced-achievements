@@ -166,9 +166,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>latest</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/libs/h2-2.2.220.jar</systemPath>
+            <version>2.1.214</version>
         </dependency>
 
         <!-- Test dependencies -->
