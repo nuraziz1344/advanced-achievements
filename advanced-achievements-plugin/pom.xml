@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -85,12 +85,23 @@
             </resource>
         </resources>
     </build>
+    <repositories>
+        <repository>
+            <id>papermc</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
             <groupId>com.hm.achievement</groupId>
             <artifactId>advanced-achievements-api</artifactId>
             <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.papermc</groupId>
+            <artifactId>paperlib</artifactId>
+            <version>1.0.6</version>
         </dependency>
         <dependency>
             <groupId>com.google.dagger</groupId>
@@ -169,10 +180,10 @@
             <version>2.1.214</version>
         </dependency>
         <dependency>
-        <groupId>net.md-5</groupId>
-        <artifactId>bungeecord-chat</artifactId>
-        <version>1.20-R0.2</version>
-      </dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-chat</artifactId>
+            <version>1.20-R0.2</version>
+        </dependency>
 
         <!-- Test dependencies -->
         <dependency>
