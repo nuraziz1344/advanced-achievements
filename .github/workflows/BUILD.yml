@@ -20,3 +20,8 @@ jobs:
       run: mvn test -B
     - name: Validate formatting
       run: mvn validate formatter:validate
+    - uses: actions/upload-artifact@v4
+      with:
+        name: my-artifact
+        path: advanced-achievements-plugin/target/AdvancedAchievements.jar
+
